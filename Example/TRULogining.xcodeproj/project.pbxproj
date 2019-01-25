@@ -63,10 +63,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B74E7C3E3679D55E234E53D0 /* Pods-TRULogining_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRULogining_Tests/Pods-TRULogining_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B8A1AACC10C91614A9C6C866 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		BDB512B2ECFE8F76509A7A92 /* TRULogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TRULogining.podspec; path = ../TRULogining.podspec; sourceTree = "<group>"; };
+		B8A1AACC10C91614A9C6C866 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BDB512B2ECFE8F76509A7A92 /* TRULogining.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TRULogining.podspec; path = ../TRULogining.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C56D5DE73AFF6C24C641C706 /* Pods-TRULogining_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRULogining_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRULogining_Example/Pods-TRULogining_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FB2BF8A1BCA7C7EDBFB273F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FB2BF8A1BCA7C7EDBFB273F8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,13 +370,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TRULogining_Example/Pods-TRULogining_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/TRULogining/TRULogining.framework",
+				"${BUILT_PRODUCTS_DIR}/TRUNetworking/TRUNetworking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRULogining.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TRUNetworking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
